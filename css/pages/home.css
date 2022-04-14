@@ -3,6 +3,7 @@
 @import '../base/layout.css';
 
 /* 3rd-party */
+@import '../3rd-party/faq.css';
 
 /* components */
 @import '../components/button.css';
