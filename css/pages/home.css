@@ -20,6 +20,17 @@
 /* what we do: end */
     
 /* our team: start */
+    .team-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .padding-to-text-top{
+        padding-top: 30px;
+    }
+    .padding-text-girl {
+        padding-top: 60px;
+    }
 /* our team: end */
 
 /* moving blocks: start */
