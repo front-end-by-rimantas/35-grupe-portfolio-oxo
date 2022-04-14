@@ -1,3 +1,14 @@
+:root {
+    --font-black-color: #000;
+    --font-white-color: #fff;
+    --font-grey-color: #727777;
+    --font-blue-color: #16215d;
+    --btn-primary-color: #ff6661;
+    --btn-primary-color-anti: #fff;
+    --btn-secondary-color: #fd2c6b;
+    --btn-secondary-color-anti: #fff;
+}
+
 body,
 body * {
     margin: 0;
