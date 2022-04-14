@@ -1,0 +1,27 @@
+.btn {
+    display: inline-block;
+    background-color: var(--btn-primary-color) ;
+    color: var(--btn-primary-color-anti);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.2em;
+    padding: 14px 40px;
+    transition: 0.4s;
+}
+.btn:hover{
+    background-color: var(--btn-secondary-color) ;
+}
+.btn.hero-btn:hover {
+    padding: 14px 39px;
+    border: 1px solid var(--btn-primary-color-anti);
+}
+.btn.btn-line {
+    border: 1px solid var(--btn-primary-color-anti);
+}
+.btn.btn-line:hover {
+    border: none;
+    padding: 15px 41px;
+}
