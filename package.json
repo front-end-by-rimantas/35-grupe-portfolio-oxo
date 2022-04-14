@@ -1,7 +1,7 @@
 {
   "name": "35-grupe-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square) ![Security Status](https://img.shields.io/security-headers?label=Security&url=https%3A%2F%2Fgithub.com&style=flat-square) ![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg) ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)",
   "main": "index.js",
   "scripts": {
     "dev": "dead-server --port=3008 --host=localhost",
@@ -9,29 +9,23 @@
   },
   "keywords": [],
   "contributors": [
-    {
-      "name": "Donatas",
-      "url": "https://github.com/dstguy"
-    },
-    {
-      "name": "Paulius",
-      "url": "https://github.com/PauliusRa1987"
-    },
-    {
-      "name": "Povilas",
-      "url": "https://github.com/neigiamasJonas"
-    },
-    {
-      "name": "Tomas V",
-      "url": "https://github.com/varanauskast"
-    },
-    {
-      "name": "Tomaš",
-      "url": "https://github.com/TomUrin"
-    }
+    "Donatas (https://github.com/dstguy)",
+    "Paulius (https://github.com/PauliusRa1987)",
+    "Povilas (https://github.com/neigiamasJonas)",
+    "Tomas V (https://github.com/varanauskast)",
+    "Tomaš (https://github.com/TomUrin)"
   ],
   "license": "MIT",
   "devDependencies": {
     "dead-server": "^1.0.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/front-end-by-rimantas/35-grupe-portfolio-oxo.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/front-end-by-rimantas/35-grupe-portfolio-oxo/issues"
+  },
+  "homepage": "https://github.com/front-end-by-rimantas/35-grupe-portfolio-oxo#readme"
 }
