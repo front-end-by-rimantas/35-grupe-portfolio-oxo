@@ -9,7 +9,7 @@
     margin-top:0.1rem;
 } */
 /* .social{
-    color: #808080;
+    color: #7D7D93;
 } */
 /* .footer_paragraf{
 }  */
@@ -17,20 +17,20 @@
     text-decoration: none;
 }
 .footer_hiper_link{
-    /* color: #808080; */
+    color: #7D7D93;
     text-decoration: none;
     transition: 0.5s;
     
 }
 .footer_hiper_link:hover{
-    /* color:hsl(313, 75%, 47%) ; */
+    color:hsl(313, 75%, 47%) ;
     text-decoration: none;
 }
 .footer_list{
     list-style: none;
 }
 .fa-brands{
-    /* color: #808080; */
+    color: #7D7D93;
     padding-right: 0.55rem;
     transition: 0.5s;
 }
@@ -39,5 +39,5 @@
 }
  .copyrights{
    text-align: center;
-    /* color: #808080;  */
+    /* color: #7D7D93;  */
 }  
