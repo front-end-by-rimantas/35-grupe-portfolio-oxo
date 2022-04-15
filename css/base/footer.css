@@ -1,24 +1,43 @@
-.company{
-    display:grid;
+/* /* .company{
 }
 .products{
-    display:grid;
-}
-.resources{
-    display:grid;
-}
-.relevent{
-    display:grid; 
-}
+} */
+/* .resources{
+    margin-top:0.1rem;
+} */
+/* .relevent{ 
+    margin-top:0.1rem;
+} */
+/* .social{
+    color: #808080;
+} */
+/* .footer_paragraf{
+}  */
 .social_hiper_link{
     text-decoration: none;
 }
-
+.footer_hiper_link{
+    /* color: #808080; */
+    text-decoration: none;
+    transition: 0.5s;
+    
+}
+.footer_hiper_link:hover{
+    /* color:hsl(313, 75%, 47%) ; */
+    text-decoration: none;
+}
+.footer_list{
+    list-style: none;
+}
 .fa-brands{
-    color: #808080;
+    /* color: #808080; */
     padding-right: 0.55rem;
-    transition: 1s;
+    transition: 0.5s;
 }
 .fa-brands:hover{
     color: hsl(313, 75%, 47%);
 }
+ .copyrights{
+   text-align: center;
+    /* color: #808080;  */
+}  
