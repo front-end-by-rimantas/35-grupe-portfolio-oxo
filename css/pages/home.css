@@ -18,13 +18,7 @@
 /* hero: end */
 
 /* what we do: start */
-.container.color-we-do {
-    background: var(--btn-primary-color);
-    background: linear-gradient(0deg, var(--btn-primary-color) 0%, #fb3c7f 100%);
-
-}
 .box-1 {
-    background-color: var(--btn-primary-color-anti);
     padding: 35px;
     border-radius: 10px;
     margin-bottom: 30px;
