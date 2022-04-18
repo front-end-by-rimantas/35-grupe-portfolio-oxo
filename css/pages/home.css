@@ -41,6 +41,12 @@
 /* questions: end */
 
 /* free trial: start */
+.row.free-tryl {
+    border-radius: 10px;
+    padding: 80px 30px;
+    display: inline-block;
+}
+
 /* free trial: end */
 
 /* form: start */
