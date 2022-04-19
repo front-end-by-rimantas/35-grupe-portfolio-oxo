@@ -1,0 +1,32 @@
+.accordion-item {
+    margin-bottom: 20px;
+}
+
+.accordion-item-content {
+    padding: 20px;
+    display: none;
+}
+
+.accordion-item--active .accordion-item-content {
+    display: block;
+    background-color: #fff;
+}
+
+.accordion-item-trigger {
+    background-color: #f9f3ff;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion-item-trigger::before {
+    content: "\25B2";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+}
+
+.accordion-item--active .accordion-item-trigger::before {
+    content: "\25BC";
+}
