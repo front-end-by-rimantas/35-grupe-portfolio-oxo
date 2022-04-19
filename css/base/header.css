@@ -1,0 +1,23 @@
+.container.head {
+    padding: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: transparent;
+    /* position: absolute; */
+}
+header .logo {
+    margin-right: 100px;
+    margin-top: 7px;
+}
+
+header .nav {
+    float: right;
+}
+
+header .nav-link {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 3.2em;
+    color: var(--font-blue-color);
+    margin-right: 40px;
+}

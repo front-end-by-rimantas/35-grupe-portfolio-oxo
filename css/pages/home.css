@@ -1,15 +1,16 @@
 /* base */
 @import '../base/base.css';
+@import '../base/header.css';
 @import '../base/layout.css';
 @import '../base/backgroundColors.css';
 
 /* 3rd-party */
 @import '../3rd-party/faq.css';
+@import '../3rd-party/font-awesome.min.css';
 
 /* components */
 @import '../components/button.css';
 @import '../components/form.css';
-
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* header: start */
@@ -69,6 +70,17 @@
 /* free trial: end */
 
 /* form: start */
+.row > .form-text {
+    text-align: center;
+}
+.row > .form-text> h2, p{
+    text-align: left;
+    margin-left: 30px;
+}
+.row > .form-text > img {
+   margin-bottom: 40px
+}
+
 /* form: end */
 
 /* footer: start */

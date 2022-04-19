@@ -23,16 +23,18 @@
 
 
     <!-- header: start -->
-    <header class="container">
+    <header class="container head">
         <div class="row">
             <div class="col-12">
-                <a href="#"><img src="#" alt="OXO logo" class="logo"></a>
-                <nav class="hidden visible-lg">
-                    <a href="#">Home</a>
-                    <a href="#">Pages</a>
-                    <a href="#">What We Do</a>
-                    <a href="#">Why Us?</a>
-                    <a href="#">Our Work</a>
+                <a href="#">
+                    <img class="logo" src="./img/logo.png" alt="OXO logo">
+                </a>
+                <nav class="hidden visible-lg nav">
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">Pages</a>
+                    <a class="nav-link" href="#">What We Do</a>
+                    <a class="nav-link" href="#">Why Us?</a>
+                    <a class="nav-link" href="#">Our Work</a>
                     <a class="btn" href="#">Get In Touch</a>
                 </nav>
             </div>
@@ -248,14 +250,30 @@
     <!-- form: start -->
     <section class="container">
         <div class="row">
-            <div class="col-12 col-lg-4 col-xl-3">
+
+            <div class="col-12 col-lg-4 col-xl-3 form-text">
                 <h2 class="section-title xl">Lets scale your brand, together</h2>
                 <p class="section-description sm font-grey">Get a start@oxo.com</p>
-                <img src="#" alt="Girl with pc">
+                <img src="./img/form-sec-images/girl-pc.png" alt="Girl with pc">
             </div>
-            <div class="col-12 col-lg-6 ml-lg-2 ml-xl-3">
+            <div class="col-12 col-lg-6 ml-lg-2 ml-xl-2">
                 <form>
-                    FORM
+                    <div class="form-row">
+                        <label for="name" class="label">Name<span>&#42;</span></label>
+                        <input id="name" type="text" class="input" placeholder="Type Name" value="" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone" class="label">Phone<span>&#42;</span></label>
+                        <input id="phone" type="phone" class="input" placeholder="Type Phone Number" value="" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email" class="label">Email Address<span>&#42;</span></label>
+                        <input id="email" type="email" class="input" placeholder="Type Email Address" value="" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="description" class="label">How can we help?<span>&#42;</span></label>
+                        <textarea id="description" type="textarea" class="input" placeholder="Type Description" rows="5" cols="70" value="" required></textarea>
+                    </div>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
