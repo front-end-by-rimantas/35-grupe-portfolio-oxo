@@ -69,6 +69,17 @@
 /* free trial: end */
 
 /* form: start */
+.row > .form-text {
+    text-align: center;
+}
+.row > .form-text> h2, p{
+    text-align: left;
+    margin-left: 30px;
+}
+.row > .form-text > img {
+   margin-bottom: 40px
+}
+
 /* form: end */
 
 /* footer: start */
