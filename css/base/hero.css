@@ -1,0 +1,16 @@
+.hero-marg {
+    margin-top: -460px;
+    margin-bottom: 250px;
+}
+
+.img-marg {
+    margin-top: -160px;
+}
+
+.bg {
+    background-image: url(../../img/hero/bg.png);
+    height: 650px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+}

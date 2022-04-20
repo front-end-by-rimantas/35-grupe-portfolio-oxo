@@ -3,14 +3,20 @@
 @import '../base/header.css';
 @import '../base/layout.css';
 @import '../base/backgroundColors.css';
+@import '../base/faq.css';
+@import '../base/hero.css';
 
 /* 3rd-party */
+
 @import '../3rd-party/faq.css';
 @import '../3rd-party/font-awesome.min.css';
+
 
 /* components */
 @import '../components/button.css';
 @import '../components/form.css';
+@import '../components/circle.css';
+
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* header: start */
