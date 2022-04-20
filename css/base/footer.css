@@ -44,6 +44,9 @@ footer > .container.copy{
 .footer_hiper_link:hover{
     color:hsl(313, 75%, 47%) ;
     text-decoration: none;
+} 
+.section-title.sm{
+    margin-top: 10px;
 }
 .footer_paragraf{
     margin: 25px 0;
