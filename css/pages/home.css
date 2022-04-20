@@ -8,6 +8,9 @@
 
 /* 3rd-party */
 
+@import '../3rd-party/faq.css';
+@import '../3rd-party/font-awesome.min.css';
+
 
 /* components */
 @import '../components/button.css';
