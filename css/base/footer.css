@@ -11,23 +11,26 @@
 /* .social{
     color: #7D7D93;
 } */
-/* .footer_paragraf{
-}  */
+.footer_paragraf{
+    margin: 25px 0;
+}  
 footer.container{
     padding-bottom: 0;
 }
 footer > .container.copy{
     padding-top: 50px;
     padding-bottom: 0;
+    
 }
 .social_hiper_link{
     text-decoration: none;
+    
 }
 .footer_hiper_link{
     color: #7D7D93;
     text-decoration: none;
     transition: 0.5s;
-    
+    line-height: 30px;
 }
 .footer_hiper_link:hover{
     color:hsl(313, 75%, 47%) ;
@@ -45,5 +48,6 @@ footer > .container.copy{
     color: hsl(313, 75%, 47%);
 }
 .copyrights{
+
    color: #7D7D93;
 }  
