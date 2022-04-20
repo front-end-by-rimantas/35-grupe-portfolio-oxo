@@ -18,7 +18,7 @@
 .trial{ 
     background-image: var(--trial-background-color);
 } 
-.footer{ 
+footer{ 
     background-color: var(--footer-background-color);
 } 
 .whatWeDo-btn{ 

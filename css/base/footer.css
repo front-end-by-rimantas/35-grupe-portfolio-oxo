@@ -13,6 +13,13 @@
 } */
 /* .footer_paragraf{
 }  */
+footer.container{
+    padding-bottom: 0;
+}
+footer > .container.copy{
+    padding-top: 50px;
+    padding-bottom: 0;
+}
 .social_hiper_link{
     text-decoration: none;
 }
@@ -37,7 +44,6 @@
 .fa-brands:hover{
     color: hsl(313, 75%, 47%);
 }
- .copyrights{
-   text-align: center;
-    /* color: #7D7D93;  */
+.copyrights{
+   color: #7D7D93;
 }  
