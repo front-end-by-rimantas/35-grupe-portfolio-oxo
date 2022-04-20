@@ -9,7 +9,7 @@ _The first OXO team project_
 
 This project is for team work practice. Pull request are necessity for project authors! Thank you for your cooperation!
 
-Site published at: https://github.com/front-end-by-rimantas/35-grupe-portfolio-oxo
+Site published at: https://front-end-by-rimantas.github.io/35-grupe-portfolio-oxo/
 
 Design: https://irtech.biz/tf/oxo/index-10.html#
 
