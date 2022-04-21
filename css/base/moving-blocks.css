@@ -1,0 +1,30 @@
+.block-box {
+    border: 1px solid #ff7364;
+    display: inline-block;
+    padding: 40px 40px;
+}
+.block-box > .block-quote {
+    color: #ff7364;
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.block-box > .block-description {
+    font-size: 22px;
+    line-height: 32px;
+    color: #000629;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.block-box > .block-h4-title {
+    width: 40%;
+    float: left;
+    line-height: 20px;
+}
+
+.block-box > .block-CEO {
+    float: right;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--font-grey-color);
+}
