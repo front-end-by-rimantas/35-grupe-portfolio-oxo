@@ -1,5 +1,6 @@
 // component imports
-
+import { blockData } from '../data/blocks-section-data.js';
+import {renderBlocks} from '../components/moving-blocks.js';
 // components execution
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
@@ -17,6 +18,7 @@
 /* our team: end */
 
 /* moving blocks: start */
+renderBlocks('.block-generator', blockData);
 /* moving blocks: end */
 
 /* questions: start */

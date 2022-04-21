@@ -1,3 +1,6 @@
+.block-container{
+    padding-bottom: 0;
+}
 .block-box {
     border: 1px solid #ff7364;
     display: inline-block;
