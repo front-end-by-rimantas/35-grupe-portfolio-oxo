@@ -35,21 +35,14 @@ a {
     margin-bottom: 15px;
 }
 
-.section-title.biggest {
-    font-size: 60px;
-    line-height: 70px;
-    color: var(--font-black-color);
-    margin-bottom: 30px;
+.section-title.sm {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 600;
+    color: var(--font-blue-color);
 }
 
-.section-title.bigger {
-    font-size: 40px;
-    line-height: 50px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-h3 {
+.section-title.md {
     font-size: 25px;
     line-height: 35px;
     margin: 20px;
@@ -57,12 +50,18 @@ h3 {
     text-align: center;
 }
 
-h4 {
-    font-size: 16px;
-    line-height: 28px;
-    font-weight: 600;
-    padding: 15px 30px;
-    color: var(--font-blue-color);
+.section-title.xl {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.section-title.xxl {
+    font-size: 60px;
+    line-height: 70px;
+    color: var(--font-black-color);
+    margin-bottom: 30px;
 }
 
 .section-description {
@@ -74,13 +73,13 @@ h4 {
 
 }
 
-.section-description.smaller {
+.section-description.sm {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 10px;
 }
 
-.section-description.medium {
+.section-description.md {
     font-size: 15px;
     line-height: 20px;
     font-weight: 300;
