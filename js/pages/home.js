@@ -5,6 +5,17 @@
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* header: start */
+const mainHeaderDOM = document.querySelector ('.header-row')
+
+addEventListener ('scroll', function () {
+    const headerPossition = 660;
+    if (scrollY < headerPossition) {
+        mainHeaderDOM.classList.remove ('fixed')
+    }
+    if (this.scrollY > headerPossition) {
+        mainHeaderDOM.classList.add ("fixed")
+    }
+})
 /* header: end */
 
 /* hero: start */
