@@ -18,7 +18,7 @@ import {renderBlocks} from '../components/moving-blocks.js';
 /* our team: end */
 
 /* moving blocks: start */
-renderBlocks('.block-generator', blockData);
+renderBlocks('#block-generator', blockData);
 /* moving blocks: end */
 
 /* questions: start */
