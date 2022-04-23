@@ -23,23 +23,50 @@
 
 
     <!-- header: start -->
-    <header class="container head bg">
-        <div class="row">
+    <header class="container main-header bg">
+        <div class="row fixed">
             <div class="col-12">
                 <a href="#">
                     <img class="logo" src="./img/logo.png" alt="OXO logo">
                 </a>
-                <nav class="hidden visible-lg nav">
-                    <a class="nav-link" href="#">Home</a>
-                    <a class="nav-link" href="#">Pages</a>
-                    <a class="nav-link" href="#">What We Do</a>
-                    <a class="nav-link" href="#">Why Us?</a>
-                    <a class="nav-link" href="#">Our Work</a>
-                    <a class="btn" href="#">Get In Touch</a>
-                </nav>
-                <div class="circle"></div>
+                <nav class="hidden visible-flex-lg nav">
+                    <div class="dropdown-link">
+                        <a class="nav-link drop" href="#">Home<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-list">
+                            <li><a href="#">Home 01</a></li>
+                            <li><a href="#">Home 02</a></li>
+                            <li><a href="#">Home 03</a></li>
+                            <li><a href="#">Home 04</a></li>
+                            <li><a href="#">Home 05</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-link">
+                        <a class="nav-link" href="#">Pages<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">How It Work</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Comming Soon</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="nav-link" href="#">What We Do</a>
+                    </div>
+                    <div>
+                        <a class="nav-link" href="#">Why Us?</a>
+                    </div>
+                    <div>
+                        <a class="nav-link" href="#">Our Work</a>
+                    </div>
+                    <div>
+                        <a class="btn" href="#">Get In Touch</a>
+                    </div>
+                </nav>    
             </div>
         </div>
+        <div class="circle"></div>
     </header>
     <!-- header: end -->
 
@@ -47,7 +74,7 @@
     <!-- hero: start -->
     <section class="container hero-marg">
         <div class="row">
-            <div style="position: absolute;" class="col-sm-10 col-md-10 col-lg-6 forward">
+            <div style="position: absolute;" class="col-sm-10 col-md-10 col-lg-6 col-xl-5 col-xxl-4 forward">
                 <h1 class="section-title xxl">Your Full-Funnel Growth Agency</h1>
                 <p class="section-description">Capture and retrieve your lists across devices to help you stay organized at work, home, and on the go.</p>
                 <a  href="#" class="btn hero-btn">Get Started</a>
@@ -224,16 +251,14 @@
     <!-- free trial: start -->
         <section class="container">
             <div class="row trial free-tryl">
-                <div class="col-12 col-md-10 ml-md-1 col-lg-8 ml-lg-2 col-xl-6 ml-xl-3">
+                <div class="col-12 col-lg-8 ml-lg-2">
                     <div>
                         <h2 class="section-title font-center font-white">Try for 7 days free</h2>
-                        <p class="section-description sm font-center font-white push">Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back.</p>
+                        <p class="section-description sm font-center font-white">Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back.</p>
                     </div>
-                    <div class="col-12 col-md-10 ml-md-1  col-lg-8 ml-lg-2 col-xl-6 ml-xl-3">
-                        <form class="font-center push">
-                            <div class="form-row">
-                                <input id="email" type="email" class="input free-form" placeholder="Your email address" value="" required>
-                            </div>
+                    <div class="col-12 col-lg-8 ml-lg-2">
+                        <form class="font-center">
+                            Form
                             <button type="submit" class="trial-btn btn btn-line">Try It Now</button>
                         </form>
                     </div>
@@ -281,7 +306,7 @@
     <!-- footer: start -->
     <footer class="container">
         <div class="row"> 
-            <div class="social col-12 col-sm-6 col-md-6 col-lg-3 ml-lg-1">
+            <div class="social col-12 col-sm-6 col-md-6 col-lg-3">
 
                 <img src="./img/logo.png" alt="logo">
 
@@ -300,19 +325,19 @@
                     <i class="fa-brands fa-twitter"></i>
                 </a>
             </div>
-                <div class="company col-12 col-sm-6 col-md-6  col-lg-2 ml-lg-0">
+                <div class="company col-12 col-sm-6 col-md-6 col-lg-2">
 
                 <h4 class="section-title sm">Company</h4>
 
                     <ul class="footer_list">
                         <li>
-                            <a class="footer_hiper_link" href="#">About Us</a>
+                            <a class="footer_hiper_link" href="#">about Us</a>
                         </li>
                         <li>
-                            <a class="footer_hiper_link" href="#">Features</a>
+                            <a class="footer_hiper_link" href="#">features</a>
                         </li>
                         <li>
-                            <a class="footer_hiper_link" href="#">Pricing</a>
+                            <a class="footer_hiper_link" href="#">pricing</a>
                         </li>
                     </ul>
                 </div>
@@ -322,13 +347,13 @@
 
                         <ul class="footer_list">
                             <li>
-                                <a class="footer_hiper_link" href="#">Blog</a>
+                                <a class="footer_hiper_link" href="#">blog</a>
                             </li>
                             <li>
-                                <a class="footer_hiper_link" href="#">Help Center</a>
+                                <a class="footer_hiper_link" href="#">help Center</a>
                             </li>
                             <li>
-                                <a class="footer_hiper_link" href="#">Contact</a>
+                                <a class="footer_hiper_link" href="#">contact</a>
                             </li>
                         </ul>
                     </div>
@@ -341,10 +366,10 @@
                                 <a class="footer_hiper_link" href="#">FAQ&acute;S</a>
                             </li>
                             <li>
-                                <a class="footer_hiper_link" href="#">Testimonial</a>
+                                <a class="footer_hiper_link" href="#">testimonial</a>
                             </li>
                             <li>
-                                <a class="footer_hiper_link" href="#">Terms &amp; Conditions</a>
+                                <a class="footer_hiper_link" href="#">terms &amp; conditions</a>
                             </li>
                         </ul>
                     </div>
@@ -354,21 +379,21 @@
 
                         <ul class="footer_list">
                             <li>
-                                <a class="footer_hiper_link" href="#">Why</a>
+                                <a class="footer_hiper_link" href="#">why</a>
                             </li>
                             <li>
-                                <a class="footer_hiper_link" href="#">Products</a>
+                                <a class="footer_hiper_link" href="#">products</a>
                             </li>
                             <li>
-                                <a class="footer_hiper_link" href="#">Customers</a>
+                                <a class="footer_hiper_link" href="#">customers</a>
                             </li>
                         </ul>
                     </div> 
             </div>
-        <div class="container copy">
+        <div class="container">
             <div class="row">
-                <div class="col-12 font-center copyrights" >
-                    <p>&copy;Copyrights 2020 Oxo All rights reserved.</p>
+                <div class="copyrights col-12" >
+                    &copy;Copyrights 2020 Oxo All rights reserved.
                 </div>
             </div>
         </div>

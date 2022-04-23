@@ -6,6 +6,31 @@ import {renderBlocks} from '../components/moving-blocks.js';
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* header: start */
+window.onload = pageLoad
+
+function pageLoad() {
+    document.querySelector('.row').classList.remove('fixed')
+}
+
+const mainHeaderDOM = document.querySelector ('.row')
+
+addEventListener ('scroll', function () {
+    const headerPossition = 660;
+
+    if (scrollY > 0) {
+        mainHeaderDOM.classList.remove ('fixed')
+    }
+
+    if (scrollY < headerPossition) {
+        mainHeaderDOM.classList.remove ('fixed')
+    }
+
+    if (scrollY > headerPossition) {
+        mainHeaderDOM.classList.add ('fixed')
+    }
+})
+
+
 /* header: end */
 
 /* hero: start */
