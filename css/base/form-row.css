@@ -1,9 +1,10 @@
+
 .row-flex {
     display: flex;
     flex-direction: column;
 }
 .h-girl {
-    
+    font-weight: 600;
 }
 .row-flex .p-girl{
     margin-bottom: 20px;
