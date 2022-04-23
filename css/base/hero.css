@@ -4,6 +4,7 @@
 }
 
 .axis.active .move {
+    transform: translate(55px,40px);
     -webkit-transform: translate(55px,40px);
     -o-transform: translate(55px,40px);
     -moz-transform: translate(55px,40px);
