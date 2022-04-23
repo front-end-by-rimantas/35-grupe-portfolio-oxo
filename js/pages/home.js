@@ -1,19 +1,32 @@
 // component imports
-
+import { blockData } from '../data/blocks-section-data.js';
+import {renderBlocks} from '../components/moving-blocks.js';
 // components execution
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* header: start */
-const mainHeaderDOM = document.querySelector ('.header-row')
+window.onload = pageLoad
+
+function pageLoad() {
+    document.querySelector('.row').classList.remove('fixed')
+}
+
+const mainHeaderDOM = document.querySelector ('.row')
 
 addEventListener ('scroll', function () {
     const headerPossition = 660;
+
+    if (scrollY > 0) {
+        mainHeaderDOM.classList.remove ('fixed')
+    }
+
     if (scrollY < headerPossition) {
         mainHeaderDOM.classList.remove ('fixed')
     }
-    if (this.scrollY > headerPossition) {
-        mainHeaderDOM.classList.add ("fixed")
+
+    if (scrollY > headerPossition) {
+        mainHeaderDOM.classList.add ('fixed')
     }
 })
 /* header: end */
@@ -38,6 +51,7 @@ addEventListener('scroll', function () {
 /* our team: end */
 
 /* moving blocks: start */
+renderBlocks('#block-generator', blockData);
 /* moving blocks: end */
 
 /* questions: start */
