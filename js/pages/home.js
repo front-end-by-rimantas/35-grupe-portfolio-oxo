@@ -40,6 +40,18 @@ addEventListener ('scroll', function () {
 /* what we do: end */
 
 /* our team: start */
+const imageStyleDOM = document.querySelector('.team-girl');
+const imageStyleDOM2 = document.querySelector('.team-boy');
+addEventListener('scroll', function () {
+    const pagePosision = 2200;
+    if (scrollY > pagePosision) {
+        imageStyleDOM.classList.remove('hide');
+        imageStyleDOM2.classList.remove('hide');
+    }else {
+        imageStyleDOM.classList.add('hide');
+        imageStyleDOM2.classList.add('hide');
+    }
+})
 /* our team: end */
 
 /* moving blocks: start */

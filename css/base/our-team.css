@@ -1,0 +1,33 @@
+.team-image.team-boy
+ {
+    visibility: visible;
+     width: 100%;
+     height: 100%;
+    object-fit: contain;
+}
+.team-image.team-boy.hide{
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.team-image.team-girl
+ {
+    visibility: visible;
+     width: 100%;
+     height: 100%;
+    object-fit: contain;
+}
+.team-image.team-girl.hide{
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.padding-to-text-top{
+    padding-top: 30px;
+}
+.padding-text-girl {
+    padding-top: 60px;
+}
