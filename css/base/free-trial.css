@@ -8,16 +8,30 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
     gap: 30px;
     margin-top: 20px;
 }
 .form-row.free-row-input{
     margin-bottom: 0;
-    
+
 }
-@media only screen and (max-width: 420px){
+.trial-btn{
+    width: 50%;
+}
+@media only screen and (max-width: 550px){
+    .trial-btn {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 500px){
     .font-center.push {
         flex-direction: column;
+    }
+    .trial-btn {
+        width: 60%;
+        align-self: center;
     }
 }
 
@@ -33,3 +47,4 @@
     padding-left: 20px
     
 }
+
