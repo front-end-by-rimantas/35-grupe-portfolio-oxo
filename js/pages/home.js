@@ -29,11 +29,19 @@ addEventListener ('scroll', function () {
         mainHeaderDOM.classList.add ('fixed')
     }
 })
-
-
 /* header: end */
 
 /* hero: start */
+const heroDOM = document.querySelector('.axis');
+
+addEventListener('scroll', function () {
+    const heroPosition = 80;
+    if (scrollY > heroPosition) {
+        heroDOM.classList.add('active');
+    } else {
+        heroDOM.classList.remove('active');
+    }
+})
 /* hero: end */
 
 /* what we do: start */

@@ -9,6 +9,7 @@
 @import '../base/footer.css';
 @import '../base/moving-blocks.css';
 @import '../base/our-team.css';
+@import '../base/free-trial.css';
 /* 3rd-party */
 
 @import '../3rd-party/faq.css';
@@ -59,29 +60,6 @@
 /* questions: end */
 
 /* free trial: start */
-.row.free-tryl {
-    border-radius: 20px;
-    padding: 80px 30px;
-    display: inline-block;
-}
-
-.input.free-form {
-    float: left;
-    width: 65%;
-    background-color: transparent;
-    padding: 12px 0 18px 0;
-}
-.input.free-form::placeholder{
-    color: var(--font-white-color);
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 22px;
-    padding-left: 20px
-    
-}
-.font-center.push {
-    margin-top: 20px;
-}
 /* free trial: end */
 
 /* form: start */
