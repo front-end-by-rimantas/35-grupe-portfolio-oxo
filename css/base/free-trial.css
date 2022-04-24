@@ -24,7 +24,6 @@
         width: 70%;
     }
 }
-
 @media only screen and (max-width: 500px){
     .font-center.push {
         flex-direction: column;
@@ -34,7 +33,6 @@
         align-self: center;
     }
 }
-
 .form-row.free-row-input > .input.free-form {
     background-color: transparent;
     margin-bottom: 0px;
