@@ -3,8 +3,17 @@
     margin-bottom: 250px;
 }
 
+.axis.active .move {
+    transform: translate(55px,40px);
+    -webkit-transform: translate(55px,40px);
+    -o-transform: translate(55px,40px);
+    -moz-transform: translate(55px,40px);
+}
+
 .img-marg {
-    margin-top: -160px;
+    transition: all 2s ease-in-out;
+    margin-top: -450px;
+    transform: translateY(0%);
 }
 
 .bg {
