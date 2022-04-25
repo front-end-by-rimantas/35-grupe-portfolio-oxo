@@ -1,4 +1,11 @@
 function renderBlocks(selector, data){
+    // susirasome privalomus ir neprivalumus raktus objekte
+    const privalomi = ['decript', 'ceoName', 'title']
+    const neprivalomi = ['icon']
+    // suskaiciuojam kiek yra abieju raktu tipu
+    const minimalusRaktuSkaicius = privalomi.length;
+    const maxRaktuSkaicius = minimalusRaktuSkaicius + neprivalomi.length;
+
     // Tikrinu ar slectorius yra stringas ir ar jis yr ne tuscias
     if (typeof selector !== 'string' || selector === '') {
         return [true, 'Selector turi buti stringas ir jis turi buti ne tuscias'];
@@ -27,10 +34,21 @@ function renderBlocks(selector, data){
         // Kadangi tai yra TIKRAS objectas, pabandome issitraukti raktus masyvo forma (Keys)
         const raktai = Object.keys(item);
         //Tikriname kiek raktazodziu yra objekte ir kurie yra privalomi
-        if (raktai.length < 2 || raktai.length > 3) {
-            
+        if (raktai.length < minimalusRaktuSkaicius || raktai.length > maxRaktuSkaicius) {
+            continue;
         }
-        
+        //Tikrinam ar objecte yra visi privalomi raktazodziai
+        // 1. Tikrinam ar decript, title ir ceoName yra stringas ir jis nera tuscias, bei uzdedam trim( kad negeneruotu nereikalingo turinio)
+        if (typeof item.title !== 'string' || item.title.trim() === '') {
+            continue
+        }
+        if (typeof item.decript !== 'string' || item.decript.trim() === '') {
+            continue
+        }
+        if (typeof item.ceoName !== 'string' || item.ceoName.trim() === '') {
+            continue
+        }
+
         HTML += `
         <div class="${item.className} block-box">
             <i class="fa fa-${item.icon} block-quote" aria-hidden="true"></i>
