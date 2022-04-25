@@ -23,23 +23,50 @@
 
 
     <!-- header: start -->
-    <header class="container head bg">
-        <div class="row">
+    <header class="container main-header bg">
+        <div class="row fixed">
             <div class="col-12">
                 <a href="#">
                     <img class="logo" src="./img/logo.png" alt="OXO logo">
                 </a>
-                <nav class="hidden visible-lg nav">
-                    <a class="nav-link" href="#">Home</a>
-                    <a class="nav-link" href="#">Pages</a>
-                    <a class="nav-link" href="#">What We Do</a>
-                    <a class="nav-link" href="#">Why Us?</a>
-                    <a class="nav-link" href="#">Our Work</a>
-                    <a class="btn" href="#">Get In Touch</a>
-                </nav>
-                <div class="circle"></div>
+                <nav class="hidden visible-flex-lg nav">
+                    <div class="dropdown-link">
+                        <a class="nav-link drop" href="#">Home<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-list">
+                            <li><a href="#">Home 01</a></li>
+                            <li><a href="#">Home 02</a></li>
+                            <li><a href="#">Home 03</a></li>
+                            <li><a href="#">Home 04</a></li>
+                            <li><a href="#">Home 05</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-link">
+                        <a class="nav-link" href="#">Pages<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">How It Work</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Comming Soon</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="nav-link" href="#">What We Do</a>
+                    </div>
+                    <div>
+                        <a class="nav-link" href="#">Why Us?</a>
+                    </div>
+                    <div>
+                        <a class="nav-link" href="#">Our Work</a>
+                    </div>
+                    <div>
+                        <a class="btn" href="#">Get In Touch</a>
+                    </div>
+                </nav>    
             </div>
         </div>
+        <div class="circle"></div>
     </header>
     <!-- header: end -->
 
@@ -47,13 +74,13 @@
     <!-- hero: start -->
     <section class="container hero-marg">
         <div class="row">
-            <div style="position: absolute;" class="col-sm-10 col-md-10 col-lg-6 forward">
+            <div style="position: relative; z-index: 1;" class="col-sm-10 col-md-10 col-lg-6 col-xl-6 col-xxl-5 forward">
                 <h1 class="section-title xxl">Your Full-Funnel Growth Agency</h1>
                 <p class="section-description">Capture and retrieve your lists across devices to help you stay organized at work, home, and on the go.</p>
                 <a  href="#" class="btn hero-btn">Get Started</a>
             </div>
-            <div class="col-12 hidden visible-md col-md-5 ml-md-4 col-lg-5 ml-lg-6 ml-xl-7">
-                <img class="img-marg" src="./img/hero/banner-right-pict.png" alt="must be a picture here">
+            <div  class="axis active col-12 hidden visible-md col-md-5 ml-md-4 col-lg-5 ml-lg-6 col-xl-5 ml-xl-7">
+                <img class="img-marg image move" src="./img/hero/banner-right-pict.png" alt="must be a picture here">
             </div>
         </div>
     </section>
@@ -136,7 +163,7 @@
         </div>
         <div class="row">
             <div class="col-10 ml-1 col-sm-8 ml-sm-2 col-md-6 ml-md-3 col-lg-4 ml-lg-0">
-                <img class="team-image" src="./img/our-team-images/projekto-foto-berniukas.png" alt="Boy smile image">
+                <img class="team-image team-boy hide" src="./img/our-team-images/projekto-foto-berniukas.png" alt="Boy smile image">
             </div>
             <div class="col-10 ml-1 col-sm-10 ml-sm-1 col-md-10 ml-md-1 col-lg-5 ml-lg-0 padding-to-text-top">
                 <h2 class="section-title">Cover your everyday expenses</h2>
@@ -149,7 +176,7 @@
                 <p class="section-description font-grey">Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back into the development of the asset through its charitable foundation.</p>
             </div>
             <div class="col-10 ml-1 col-sm-8 ml-sm-2 col-md-6 ml-md-3 col-lg-4 ml-lg-0 padding-to-text-top">
-                <img class="team-image" src="./img/our-team-images/projekto-foto-mergaite.png" alt="Boy smile image">
+                <img class="team-image team-girl hide" src="./img/our-team-images/projekto-foto-mergaite.png" alt="Boy smile image">
             </div> 
         </div>
     </section>
@@ -222,37 +249,36 @@
 
 
     <!-- free trial: start -->
-        <section class="container">
-            <div class="row trial free-tryl">
-                <div class="col-12 col-md-10 ml-md-1 col-lg-8 ml-lg-2 col-xl-6 ml-xl-3">
-                    <div>
-                        <h2 class="section-title font-center font-white">Try for 7 days free</h2>
-                        <p class="section-description sm font-center font-white push">Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back.</p>
-                    </div>
-                    <div class="col-12 col-md-10 ml-md-1  col-lg-8 ml-lg-2 col-xl-6 ml-xl-3">
-                        <form class="font-center push">
-                            <div class="form-row">
-                                <input id="email" type="email" class="input free-form" placeholder="Your email address" value="" required>
-                            </div>
-                            <button type="submit" class="trial-btn btn btn-line">Try It Now</button>
-                        </form>
-                    </div>
+    <section class="container">
+        <div class="row trial free-tryl">
+            <div class="col-12 col-md-10 ml-md-1 col-lg-8 ml-lg-2 col-xl-6 ml-xl-3">
+                <div>
+                    <h2 class="section-title font-center font-white">Try for 7 days free</h2>
+                    <p class="section-description sm font-center font-white push">Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back.</p>
+                </div>
+                <div class="col-12 col-md-10 ml-md-1  col-lg-8 ml-lg-2 col-xl-6 ml-xl-3">
+                    <form class="font-center push">
+                        <div class="form-row free-row-input">
+                            <input id="email" type="email" class="input free-form" placeholder="Your email address" value="" required>
+                        </div>
+                        <button type="submit" class="trial-btn btn btn-line">Try It Now</button>
+                    </form>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     <!-- free trial: end -->
 
 
     <!-- form: start -->
-    <section class="container">
-        <div class="row">
-
-            <div class="col-12 col-lg-4 col-xl-3 form-text">
-                <h2 class="section-title xl">Lets scale your brand, together</h2>
-                <p class="section-description sm font-grey">Get a start@oxo.com</p>
-                <img src="./img/form-sec-images/girl-pc.png" alt="Girl with pc">
+    <section class="container form-flex">
+        <div class="row ">
+            <div class="col-12 col-lg-4 col-xl-4 form-text row-flex">
+                <h2 class="section-title xl h-girl">Let&#39;s scale your brand, together</h2>
+                <p class="section-description sm font-grey p-girl">Get a start@oxo.com</p>
+                <img class="img-girl" src="./img/form-sec-images/girl-pc.png" alt="Girl with pc">
             </div>
-            <div class="col-12 col-lg-6 ml-lg-2 ml-xl-2">
+            <div class="col-12 col-lg-6 ml-lg-2 ml-xl-2 right-col-form">
                 <form>
                     <div class="form-row">
                         <label for="name" class="label">Name<span>&#42;</span></label>
@@ -279,102 +305,100 @@
 
 
     <!-- footer: start -->
-    <footer class="container">
-        <div class="row"> 
-            <div class="social col-12 col-sm-6 col-md-6 col-lg-3 ml-lg-1">
-
-                <img src="./img/logo.png" alt="logo">
-
-                    <p class="footer_paragraf">Follow us on</p>
-
-                <a class="social_hiper_link" href="#">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a class="social_hiper_link" href="#">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a class="social_hiper_link" href="#">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a class="social_hiper_link" href="#">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-            </div>
-                <div class="company col-12 col-sm-6 col-md-6  col-lg-2 ml-lg-0">
-
-                <h4 class="section-title sm">Company</h4>
-
-                    <ul class="footer_list">
-                        <li>
-                            <a class="footer_hiper_link" href="#">About Us</a>
-                        </li>
-                        <li>
-                            <a class="footer_hiper_link" href="#">Features</a>
-                        </li>
-                        <li>
-                            <a class="footer_hiper_link" href="#">Pricing</a>
-                        </li>
-                    </ul>
+        <footer class="container">
+            <div class="row"> 
+                <div class="social col-12 col-sm-6 col-md-6 col-lg-3 ">
+    
+                    <img src="./img/logo.png" alt="logo">
+    
+                        <p class="footer_paragraf">Follow us on</p>
+    
+                    <a class="social_hiper_link" href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a class="social_hiper_link" href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a class="social_hiper_link" href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a class="social_hiper_link" href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
                 </div>
-                    <div class="products col-12 col-sm-6 col-md-6 col-lg-2">
-
-                        <h4 class="section-title sm">Products</h4>
-
+                    <div class="company col-12 col-sm-6 col-md-6  col-lg-2 ml-lg-1">
+    
+                    <h4 class="section-title sm">Company</h4>
+    
                         <ul class="footer_list">
                             <li>
-                                <a class="footer_hiper_link" href="#">Blog</a>
+                                <a class="footer_hiper_link" href="#">About Us</a>
                             </li>
                             <li>
-                                <a class="footer_hiper_link" href="#">Help Center</a>
+                                <a class="footer_hiper_link" href="#">Features</a>
                             </li>
                             <li>
-                                <a class="footer_hiper_link" href="#">Contact</a>
+                                <a class="footer_hiper_link" href="#">Pricing</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="resources col-12 col-sm-6 col-md-6 col-lg-2">
-
-                        <h4 class="section-title sm">Resources</h4>
-
-                        <ul class="footer_list">
-                            <li>
-                                <a class="footer_hiper_link" href="#">FAQ&acute;S</a>
-                            </li>
-                            <li>
-                                <a class="footer_hiper_link" href="#">Testimonial</a>
-                            </li>
-                            <li>
-                                <a class="footer_hiper_link" href="#">Terms &amp; Conditions</a>
-                            </li>
-                        </ul>
+                        <div class="products col-12 col-sm-6 col-md-6 col-lg-2">
+    
+                            <h4 class="section-title sm">Products</h4>
+    
+                            <ul class="footer_list">
+                                <li>
+                                    <a class="footer_hiper_link" href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a class="footer_hiper_link" href="#">Help Center</a>
+                                </li>
+                                <li>
+                                    <a class="footer_hiper_link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="resources col-12 col-sm-6 col-md-6 col-lg-2">
+    
+                            <h4 class="section-title sm">Resources</h4>
+    
+                            <ul class="footer_list">
+                                <li>
+                                    <a class="footer_hiper_link" href="#">FAQ&acute;S</a>
+                                </li>
+                                <li>
+                                    <a class="footer_hiper_link" href="#">Testimonial</a>
+                                </li>
+                                <li>
+                                    <a class="footer_hiper_link" href="#">Terms &amp; Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="relevent col-12 col-sm-6 col-md-6 col-lg-2">
+    
+                            <h4 class="section-title sm">Relevent</h4>
+    
+                            <ul class="footer_list">
+                                <li>
+                                    <a class="footer_hiper_link" href="#">Why</a>
+                                </li>
+                                <li>
+                                    <a class="footer_hiper_link" href="#">Products</a>
+                                </li>
+                                <li>
+                                    <a class="footer_hiper_link" href="#">Customers</a>
+                                </li>
+                            </ul>
+                        </div> 
+                </div>
+            <div class="container copy">
+                <div class="row">
+                    <div class="col-12 font-center copyrights" >
+                        <p>&copy;Copyrights 2020 Oxo All rights reserved.</p>
                     </div>
-                    <div class="relevent col-12 col-sm-6 col-md-6 col-lg-2">
-
-                        <h4 class="section-title sm">Relevent</h4>
-
-                        <ul class="footer_list">
-                            <li>
-                                <a class="footer_hiper_link" href="#">Why</a>
-                            </li>
-                            <li>
-                                <a class="footer_hiper_link" href="#">Products</a>
-                            </li>
-                            <li>
-                                <a class="footer_hiper_link" href="#">Customers</a>
-                            </li>
-                        </ul>
-                    </div> 
-            </div>
-        <div class="container copy">
-            <div class="row">
-                <div class="col-12 font-center copyrights" >
-                    <p>&copy;Copyrights 2020 Oxo All rights reserved.</p>
                 </div>
             </div>
-        </div>
     </footer>
-
-
     <!-- footer: end -->
 
     <script src="https://kit.fontawesome.com/1c57adff58.js" crossorigin="anonymous"></script>

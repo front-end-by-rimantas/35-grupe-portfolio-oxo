@@ -1,12 +1,14 @@
 /* base */
-@import "../base/base.css";
-@import "../base/header.css";
-@import "../base/layout.css";
-@import "../base/backgroundColors.css";
-@import "../base/faq.css";
-@import "../base/hero.css";
-@import "../base/footer.css";
-@import "../base/moving-blocks.css";
+@import '../base/base.css';
+@import '../base/form-row.css';
+@import '../base/header.css';
+@import '../base/layout.css';
+@import '../base/backgroundColors.css';
+@import '../base/faq.css';
+@import '../base/hero.css';
+@import '../base/footer.css';
+@import '../base/moving-blocks.css';
+@import '../base/free-trial.css';
 @import "../base/whatWeDo.css";
 /* 3rd-party */
 
@@ -68,28 +70,6 @@
 /* questions: end */
 
 /* free trial: start */
-.row.free-tryl {
-  border-radius: 20px;
-  padding: 80px 30px;
-  display: inline-block;
-}
-
-.input.free-form {
-  float: left;
-  width: 65%;
-  background-color: transparent;
-  padding: 12px 0 18px 0;
-}
-.input.free-form::placeholder {
-  color: var(--font-white-color);
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 22px;
-  padding-left: 20px;
-}
-.font-center.push {
-  margin-top: 20px;
-}
 /* free trial: end */
 
 /* form: start */
