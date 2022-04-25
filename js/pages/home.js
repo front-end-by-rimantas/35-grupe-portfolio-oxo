@@ -48,6 +48,24 @@ addEventListener('scroll', function () {
 /* what we do: end */
 
 /* our team: start */
+const imageStyleDOM = document.querySelector('.team-girl');
+const imageStyleDOM2 = document.querySelector('.team-boy');
+addEventListener('scroll', function () {
+    const pagePosision = 2450;
+    if (scrollY > pagePosision) {
+        imageStyleDOM.classList.remove('hide');
+    }else {
+        imageStyleDOM.classList.add('hide');
+    }
+})
+addEventListener('scroll', function () {
+    const pagePosision2 = 2100;
+    if (scrollY > pagePosision2) {
+        imageStyleDOM2.classList.remove('hide');
+    }else {
+        imageStyleDOM2.classList.add('hide');
+    }
+})
 /* our team: end */
 
 /* moving blocks: start */

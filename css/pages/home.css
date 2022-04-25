@@ -8,6 +8,7 @@
 @import '../base/hero.css';
 @import '../base/footer.css';
 @import '../base/moving-blocks.css';
+@import '../base/our-team.css';
 @import '../base/free-trial.css';
 @import "../base/whatWeDo.css";
 /* 3rd-party */
@@ -50,17 +51,6 @@
 /* what we do: end */
 
 /* our team: start */
-.team-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.padding-to-text-top {
-  padding-top: 30px;
-}
-.padding-text-girl {
-  padding-top: 60px;
-}
 /* our team: end */
 
 /* moving blocks: start */
