@@ -1,0 +1,39 @@
+.whatWeDo {
+  transition: 2s;
+}
+.whatWeDoIcon {
+  width: 5rem;
+  height: 5rem;
+}
+.icon-1 {
+  text-align: center;
+}
+@media (max-width: 1690px) {
+  .whatWeDo {
+    border-radius: 50% 50% 50% 50% / 2% 2% 2% 2%;
+  }
+  @media (max-width: 1509px) {
+  .whatWeDo {
+    border-radius: 50% 50% 50% 50% / 2% 2% 2% 2%;
+  }
+@media (max-width: 1510px) {
+  .whatWeDo {
+    border-radius: 50% 50% 50% 50% / 5% 5% 5% 5%;
+  }
+  @media (max-width: 1309px) {
+  .whatWeDo {
+    border-radius: 50% 50% 50% 50% / 5% 5% 5% 5%;
+  }
+  @media (max-width: 1310px) {
+  .whatWeDo {
+    border-radius: 50% 50% 50% 50% / 2% 2% 2% 2%;
+  }
+   @media (max-width: 979px) {
+  .whatWeDo {
+    border-radius: 50% 50% 50% 50% / 2% 2% 2% 2%;
+  }
+  @media (max-width: 980px) {
+  .whatWeDo {
+    border-radius:0;
+  }
+}
