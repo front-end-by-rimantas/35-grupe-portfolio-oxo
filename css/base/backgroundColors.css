@@ -1,32 +1,36 @@
-:root{
-   --body-background-color:#ffffff;
-   --what-we-do-cont-color:linear-gradient(360deg, #ff6661 0%, #f54278 100%);
-   --accordion-item-trigger-color:#f9f3ff;
-   --trial-background-color:linear-gradient(360deg, #ff6661 0%, #f54278 100%);
-   --footer-background-color:#FAFAFA;
-   --whatWeDo-btn-bacground-color:#FC6562;
-   --trial-btn-bacground-color:linear-gradient(#FB5869,#FD5E66 ); 
-   --whatWeDo-btn-bacground-color-hover:#fd2c6b; 
-   --trial-btn-bacground-color-hover:inherit;
+:root {
+  --body-background-color: #ffffff;
+  --what-we-do-cont-color: linear-gradient(360deg, #ff6661 0%, #f54278 100%);
+  --whatWeDoIcon-background-color: #ffffff;
+  --accordion-item-trigger-color: #f9f3ff;
+  --trial-background-color: linear-gradient(360deg, #ff6661 0%, #f54278 100%);
+  --footer-background-color: #fafafa;
+  --whatWeDo-btn-bacground-color: #fc6562;
+  --trial-btn-bacground-color: linear-gradient(#fb5869, #fd5e66);
+  --whatWeDo-btn-bacground-color-hover: #fd2c6b;
+  --trial-btn-bacground-color-hover: inherit;
 }
-.whatWeDo{
-    background-image: var(--what-we-do-cont-color);
-} 
-.accordion-item-trigger{
-    background-color: var(--accordion-item-trigger-color);
-} 
-.trial{ 
-    background-image: var(--trial-background-color);
-} 
-footer{ 
-    background-color: var(--footer-background-color);
-} 
-.whatWeDo-btn{ 
-    background-color: var(--whatWeDo-btn-bacground-color);
-} 
-.trial-btn{ 
-    background-image: var(--trial-btn-bacground-color);
+.whatWeDo {
+  background-image: var(--what-we-do-cont-color);
 }
-.trial-btn:hover{
-    background-image: var(--trial-btn-bacground-color-hover);
+.box-1 {
+  background-color: var(--whatWeDoIcon-background-color);
+}
+.accordion-item-trigger {
+  background-color: var(--accordion-item-trigger-color);
+}
+.trial {
+  background-image: var(--trial-background-color);
+}
+footer {
+  background-color: var(--footer-background-color);
+}
+.whatWeDo-btn {
+  background-color: var(--whatWeDo-btn-bacground-color);
+}
+.trial-btn {
+  background-image: var(--trial-btn-bacground-color);
+}
+.trial-btn:hover {
+  background-image: var(--trial-btn-bacground-color-hover);
 }
