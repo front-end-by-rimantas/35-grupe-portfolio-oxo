@@ -64,7 +64,29 @@ addEventListener('scroll', function () {
 /* our team: end */
 
 /* moving blocks: start */
-renderBlocks('#block-generator', blockData);
+
+// const [blockError, blockContent] = renderBlocks(3857, blockData);
+// const [blockError, blockContent] = renderBlocks('', blockData);
+// const [blockError, blockContent] = renderBlocks('bbd', blockData);
+// const [blockError, blockContent] = renderBlocks('header', blockData);
+// const [blockError, blockContent] = renderBlocks('#block-generator', 3589);
+// const [blockError, blockContent] = renderBlocks('#block-generator', null);
+// const [blockError, blockContent] = renderBlocks('#block-generator', {});
+//  const [blockError, blockContent] = renderBlocks('#block-generator', []);
+// const [blockError, blockContent] = renderBlocks('#block-generator', [123]);
+// const [blockError, blockContent] = renderBlocks('#block-generator', [null, [], {}]);
+const [blockError, blockContent] = renderBlocks('#block-generator', [{}]);
+
+
+
+// const [blockError, blockContent] = renderBlocks('#block-generator', blockData);
+
+
+// Padarom, kad respons spausdintu, tik kai yra klaida, jeigu true yra klaida!
+if (blockError) {
+    console.error(blockContent);
+}
+
 /* moving blocks: end */
 
 /* questions: start */
