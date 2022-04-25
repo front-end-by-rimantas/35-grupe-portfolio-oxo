@@ -20,7 +20,7 @@
 }
 
 .accordion-item-trigger::before {
-    content: "\25B2";
+    content: "\25BC";
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -28,5 +28,5 @@
 }
 
 .accordion-item--active .accordion-item-trigger::before {
-    content: "\25BC";
+    content: "\25B2";
 }
