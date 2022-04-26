@@ -112,3 +112,14 @@ item.addEventListener('click', () => {
 
 /* footer: start */
 /* footer: end */
+/* up-to-top: start */
+const arrowDOM = document.querySelector('.upTop');
+addEventListener('scroll', function () {
+    const pagePosision = 900;
+    if (scrollY > pagePosision) {
+         arrowDOM.classList.add('upVisible');
+    }else {
+       arrowDOM.classList.remove('upVisible');
+    }
+})
+/* up-to-top: end */

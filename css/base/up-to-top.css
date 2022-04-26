@@ -1,4 +1,5 @@
 .upTop {
+    opacity: 0;
     position: fixed;
     right: 30px;
     bottom: 30px;
@@ -8,6 +9,12 @@
     width: 60px;
     height: 60px;
     z-index: 1;
+    transition: all 1s;
+    box-shadow: 0 1px 5px #6c757d;
+}
+.upTop.upVisible{
+    opacity: 1;
+    transition: all 2s;
 }
 .upTop > .arrow-style{
     color: #fff;
