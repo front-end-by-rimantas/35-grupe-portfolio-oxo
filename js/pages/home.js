@@ -79,10 +79,10 @@ addEventListener('scroll', function () {
 // const [blockError, blockContent] = renderBlocks('#block-generator', [{}, {a: 2}, {b: 'b', c: 'c'}, {b: 'b', c: 'c', d: 'd'}]);
 // const [blockError, blockContent] = renderBlocks('#block-generator', [{}, {a: 2}, {b: 'b', c: 'c'}, {b: 'b', c: 'c', d: 'd', e: false}]);
 // const [blockError, blockContent] = renderBlocks('#block-generator', [{ceoName: 'a', decript: 'b', title: 4}]);
+// const [blockError, blockContent] = renderBlocks('#block-generator', [{ceoName: 'a', decript: 'b', title: '2'}]);
 
 
-
-// const [blockError, blockContent] = renderBlocks('#block-generator', blockData);
+const [blockError, blockContent] = renderBlocks('#block-generator', blockData);
 
 
 // Padarom, kad respons spausdintu, tik kai yra klaida, jeigu true yra klaida!
