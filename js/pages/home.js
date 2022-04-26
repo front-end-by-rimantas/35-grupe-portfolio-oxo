@@ -24,6 +24,15 @@ const mainHeaderDOM = document.querySelector('.row');
 
 addEventListener('scroll', scrollFunc);
 scrollFunc();
+
+// ham toggle
+const menuBtn = document.querySelector('.menu-btn');
+
+menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle('open');
+
+});
+
 /* header: end */
 
 /* hero: start */
