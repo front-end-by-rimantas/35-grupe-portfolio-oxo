@@ -1,10 +1,17 @@
 .upTop {
     position: fixed;
-    right: 50px;
-    bottom: 50px;
+    right: 30px;
+    bottom: 30px;
     border: none;
     border-radius: 100px;
-    background: linear-gradient(240deg, #ffc05e 0%, #f54278 100%);
+    background: linear-gradient(320deg, #ffc05e 0%, #f54278 100%);
     width: 60px;
     height: 60px;
+    z-index: 1;
+}
+.upTop > .arrow-style{
+    color: #fff;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 800;
 }
