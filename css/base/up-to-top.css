@@ -1,0 +1,10 @@
+.upTop {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    border: none;
+    border-radius: 100px;
+    background: linear-gradient(240deg, #ffc05e 0%, #f54278 100%);
+    width: 60px;
+    height: 60px;
+}
