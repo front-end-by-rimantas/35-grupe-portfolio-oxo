@@ -36,12 +36,6 @@
   margin-bottom: 30px;
   min-height: 320px;
 }
-.what-do-box-img > img {
-  width: 100%;
-  min-height: 450px;
-  object-fit: contain;
-  object-position: center;
-}
 .we-do-box2 {
   margin-top: 45px;
 }
