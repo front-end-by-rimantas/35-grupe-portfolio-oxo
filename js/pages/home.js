@@ -10,9 +10,6 @@ import {renderBlocks} from '../components/moving-blocks.js';
 function scrollFunc() {    
     const headerPossition = 660;
 
-    if (scrollY > 0) {
-        mainHeaderDOM.classList.remove('fixed')
-    }
     if (scrollY > headerPossition) {
         mainHeaderDOM.classList.add('fixed')
     } else {
