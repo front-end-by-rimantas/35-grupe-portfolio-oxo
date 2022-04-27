@@ -63,7 +63,8 @@
   left: 50%;
   transform: translate(-50%, -50%);;
   animation: popUPfoto;
-  animation-duration: 3s;
+  animation-duration: 1s;
+  animation-delay: 2;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   margin-top: 500px;
