@@ -32,7 +32,6 @@ const menuNav = document.querySelector('.nav')
 menuBtn.addEventListener('click', () => {
     menuBtn.classList.toggle('open');
     menuNav.classList.toggle('open');
-
 });
 
 // accordion
