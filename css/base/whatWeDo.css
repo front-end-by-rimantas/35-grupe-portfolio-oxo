@@ -41,21 +41,29 @@
   flex-wrap: wrap;
 }
 .what-do-box-img{
-  height: 400px;
+  height: 60vh;
+  position: relative;
 }
 }
 .what-do-box-img > img{
-  /* width: 100%; */
-  /* min-height: 450px; */
-  /* object-fit: contain;*/
-  /* object-position: center; */
-  position: absolute;
-  width: 300px;
-  align-self: center;
+  display: none;
+  width: 80%;
+
 }
+@media (min-width: 770px){
+  .what-do-box-img > img{
+    width: 100%;
+  }
+}
+
 .what-do-box-img.show > img{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);;
   animation: popUPfoto;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   margin-top: 500px;
@@ -63,7 +71,12 @@
 @keyframes popUPfoto{
   0% {
     margin-top: 500px;
-   
+    opacity: 0;
+    width: 100px;
+  }
+  80% {
+    opacity: 0.4;
+    width: 100px;
   }
   100%{
     margin-top: 0;
