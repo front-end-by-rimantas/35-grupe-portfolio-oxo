@@ -29,9 +29,12 @@
                 <a href="#">
                     <img class="logo" src="./img/logo.png" alt="OXO logo">
                 </a>
-                <nav class="hidden visible-flex-lg nav">
+                <div class="menu-btn">
+                    <div class="menu-btn-lines"></div>
+                </div>
+                <nav class="nav">
                     <div class="dropdown-link">
-                        <a class="nav-link drop" href="#">Home<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <a class="nav-link drop" href="javascript:void(0)">Home<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                         <ul class="dropdown-list">
                             <li><a href="#">Home 01</a></li>
                             <li><a href="#">Home 02</a></li>
@@ -41,7 +44,7 @@
                         </ul>
                     </div>
                     <div class="dropdown-link">
-                        <a class="nav-link" href="#">Pages<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <a class="nav-link drop" href="javascript:void(0)">Pages<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                         <ul class="dropdown-list">
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Contact Us</a></li>
@@ -52,18 +55,19 @@
                         </ul>
                     </div>
                     <div>
-                        <a class="nav-link" href="#">What We Do</a>
+                        <a class="nav-links" href="#">What We Do</a>
                     </div>
                     <div>
-                        <a class="nav-link" href="#">Why Us?</a>
+                        <a class="nav-links" href="#">Why Us?</a>
                     </div>
                     <div>
-                        <a class="nav-link" href="#">Our Work</a>
+                        <a class="nav-links" href="#">Our Work</a>
                     </div>
-                    <div>
+                    <div class="nav-btn">
                         <a class="btn" href="#">Get In Touch</a>
-                    </div>
-                </nav>    
+                    </div>    
+                </nav>
+
             </div>
         </div>
         <div class="circle"></div>
@@ -132,10 +136,10 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12  col-sm-10 ml-sm-1 col-md-6 ml-md-3 col-lg-4 ml-lg-0">
-                <div class="what-do-box-img">
-                    <img src="./img/what-we-do-images/what-we-do-image.png" alt="img of women and man">
+        <div class="row bet">
+            <div class="col-12 col-sm-10 ml-sm-1 col-md-6 ml-md-3 col-lg-4 ml-lg-0">
+                <div class="what-do-box-img show">
+                    <img  src="./img/what-we-do-images/what-we-do-image.png" alt="img of women and man">
                 </div>
             </div>
             <div class="col-10 ml-1 col-lg-5 ml-lg-2">
@@ -400,6 +404,10 @@
             </div>
     </footer>
     <!-- footer: end -->
+
+    <!-- up to top: start -->
+    <a href="#" class="upTop upVisible"><i class="fa fa-angle-up arrow-style" aria-hidden="true"></i></a>
+    <!-- up to top: end -->
 
     <script src="https://kit.fontawesome.com/1c57adff58.js" crossorigin="anonymous"></script>
     <script src="./js/pages/home.js" type="module" defer></script>

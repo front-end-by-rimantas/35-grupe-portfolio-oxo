@@ -11,6 +11,7 @@
 @import '../base/our-team.css';
 @import '../base/free-trial.css';
 @import "../base/whatWeDo.css";
+@import '../base/up-to-top.css';
 /* 3rd-party */
 
 @import "../3rd-party/font-awesome.min.css";
@@ -19,6 +20,7 @@
 @import "../components/button.css";
 @import "../components/form.css";
 @import "../components/circle.css";
+@import '../components/scroll-bar.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
@@ -34,12 +36,6 @@
   border-radius: 10px;
   margin-bottom: 30px;
   min-height: 320px;
-}
-.what-do-box-img > img {
-  width: 100%;
-  min-height: 450px;
-  object-fit: contain;
-  object-position: center;
 }
 .we-do-box2 {
   margin-top: 45px;
