@@ -11,6 +11,7 @@
     z-index: 1;
     transition: all 1s;
     box-shadow: 0 1px 5px #6c757d;
+    cursor: pointer;
 }
 .upTop.upVisible{
     opacity: 1;

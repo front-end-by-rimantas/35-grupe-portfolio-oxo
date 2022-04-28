@@ -122,4 +122,8 @@ addEventListener('scroll', function () {
        arrowDOM.classList.remove('upVisible');
     }
 })
+const virsus = document.querySelector('#scrollUp');
+virsus.addEventListener('click', function () {
+    window.scrollTo(0, 0);
+})
 /* up-to-top: end */
