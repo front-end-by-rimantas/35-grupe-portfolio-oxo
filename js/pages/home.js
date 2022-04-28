@@ -37,6 +37,15 @@ addEventListener('scroll', function () {
 /* hero: end */
 
 /* what we do: start */
+const weDoDOM = document.querySelector('.what-do-box-img');
+addEventListener('scroll', function () {
+    const pagePosision = 1100;
+    if (scrollY > pagePosision) {
+        weDoDOM.classList.add('show');
+    }else {
+        weDoDOM.classList.remove('show');
+    }
+})
 /* what we do: end */
 
 /* our team: start */
