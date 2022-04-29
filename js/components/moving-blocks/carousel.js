@@ -120,6 +120,3 @@ class Carousel {
 }
 
 export { Carousel }
-
-
-

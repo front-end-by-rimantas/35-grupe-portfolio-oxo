@@ -2,7 +2,7 @@
 import { blockData } from '../data/blocks-section-data.js';
 /*import {renderBlocks} from '../components/moving-blocks.js';*/
 import { Carousel } from '../components/moving-blocks/carousel.js';
-import { BlockCard } from '../components/moving-blocks.js';
+import { BlockCard } from '../components/moving-blocks/moving-blocks.js';
 // components execution
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
