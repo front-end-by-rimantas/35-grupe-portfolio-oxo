@@ -1,6 +1,8 @@
 // component imports
 import { blockData } from '../data/blocks-section-data.js';
-import {renderBlocks} from '../components/moving-blocks.js';
+/*import {renderBlocks} from '../components/moving-blocks.js';*/
+import { Carousel } from '../components/moving-blocks/carousel.js';
+import { BlockCard } from '../components/moving-blocks.js';
 // components execution
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
@@ -33,7 +35,7 @@ addEventListener('scroll', function () {
     } else {
         heroDOM.classList.remove('active');
     }
-})
+});
 /* hero: end */
 
 /* what we do: start */
@@ -79,13 +81,22 @@ addEventListener('scroll', function () {
 // const [blockError, blockContent] = renderBlocks('#block-generator', [{ceoName: 'a', decript: 'b', title: '2'}]);
 
 
-const [blockError, blockContent] = renderBlocks('#block-generator', blockData);
+/*const [blockError, blockContent] = renderBlocks('#block-generator', blockData);
 
 
 // Padarom, kad respons spausdintu, tik kai yra klaida, jeigu true yra klaida!
 if (blockError) {
     console.error(blockContent);
 }
+
+*/
+new Carousel('#block-generator', BlockCard, blockData, {
+    size: {
+        mobile: 1,
+        tablet: 2,
+        desktop: 3,
+    },
+});
 
 /* moving blocks: end */
 
