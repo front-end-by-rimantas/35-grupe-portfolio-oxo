@@ -6,6 +6,8 @@
     background-repeat: no-repeat;
     text-align: center;
     padding-top: 0;
+    position: relative;
+    overflow: hidden;
 }
 .discover-h2 {
     color: #fff;

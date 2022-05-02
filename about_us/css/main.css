@@ -51,10 +51,15 @@
 .container.couple{
     text-align: center;
     padding-top: 0;
+    position: relative;
+    overflow: hidden;
 } 
 .container.couple .coule-img{
     cursor: pointer;
-
+    filter: contrast(2);
+}
+.container.couple .coule-img:hover{
+    filter: contrast(0);
 }
 /*couple links: end*/
 
