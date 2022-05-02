@@ -1,0 +1,32 @@
+.container.people {
+    text-align: center;
+    background-color: #f1f4fe;
+}
+.container.people .people-p{
+    color: #727777;
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+.container.people .people-h3{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+.container.people .social_hiper_link.people-link > i {
+    color: #333;
+}
+.people-hover:hover {
+
+}
+.people-hover > img{
+    cursor: pointer;
+    transition: all 0.6s;
+}
+.people-hover:hover > img{
+    cursor: pointer;
+    filter: saturate(0.6) brightness(0.7)  hue-rotate(140deg);
+}
+

@@ -1,0 +1,35 @@
+.container.discover{
+    background-image: url(../../images/discover/map.png);
+    background-color: #5e2ced;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 0;
+}
+.discover-h2 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+.discover-p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.dicover-btn {
+    border-radius: 0;
+    margin-bottom: 40px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+}
+.dicover-btn:hover {
+    color: #fff;
+}

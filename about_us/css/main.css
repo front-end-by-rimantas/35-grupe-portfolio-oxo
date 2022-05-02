@@ -1,0 +1,65 @@
+/* base */
+@import '../../css/base/base.css';
+@import '../../css/base/form-row.css';
+@import '../../css/base/header.css';
+@import '../../css/base/layout.css';
+@import '../../css/base/backgroundColors.css';
+@import '../../css/base/footer.css';
+/* 3rd-party */
+
+@import "../../css/3rd-party/font-awesome.min.css";
+
+/* components */
+@import "../../css/components/button.css";
+@import "../../css//components/form.css";
+@import '../../css/components/scroll-bar.css';
+
+/* about_us_base */
+@import "../../about_us/css/base/header.css";
+@import "../../about_us/css/base/hero.css";
+@import "../../about_us/css/base/designe.css";
+@import "../../about_us/css/base/people.css";
+@import "../../about_us/css/base/discover.css";
+@import "../../about_us/css/base/water.css";
+@import "../../about_us/css/base/customer.css";
+@import "../../about_us/css/base/touch.css";
+/* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
+
+
+/*header: start*/
+/*header: end*/
+    
+/*hero: start*/  
+/* hero: end*/
+
+/*design: start*/  
+/*design: end*/
+
+/*people: start*/ 
+/*people: end*/
+
+/*discover: start*/
+/*discover: end*/
+
+/*water: start*/ 
+/*water: end*/
+
+/*customer: start*/ 
+/*customer: end*/
+
+/*couple links: start*/ 
+.container.couple{
+    text-align: center;
+    padding-top: 0;
+} 
+.container.couple .coule-img{
+    cursor: pointer;
+
+}
+/*couple links: end*/
+
+/*Get in touch: start*/  
+/*Get in touch: touch: end*/
+
+/*footer: start*/
+/*footer: end*/

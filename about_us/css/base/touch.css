@@ -1,0 +1,30 @@
+.container.touch{
+    position: relative;
+    background-color: #7a5bff;
+    height: 400px;
+}
+.touch-row{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.touch-p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.touch-h3{
+    color: #fff;
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 700;
+}
+.touch-img > img {
+    height: 400px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    object-fit: contain;
+    z-index: 0;
+}
