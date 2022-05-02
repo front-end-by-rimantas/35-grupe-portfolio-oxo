@@ -1,6 +1,7 @@
 .container.touch{
     position: relative;
     background-color: #7a5bff;
+    background-image: url(../../images/touch-image/22.png);
     height: 400px;
 }
 .touch-row{

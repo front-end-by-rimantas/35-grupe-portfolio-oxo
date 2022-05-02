@@ -18,15 +18,26 @@
 .container.people .social_hiper_link.people-link > i {
     color: #333;
 }
-.people-hover:hover {
-
+.people-hover{
+    position: relative;
 }
 .people-hover > img{
     cursor: pointer;
     transition: all 0.6s;
+    
 }
 .people-hover:hover > img{
     cursor: pointer;
     filter: saturate(0.6) brightness(0.7)  hue-rotate(140deg);
 }
-
+.people-hover:hover > .ratas{
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    position: absolute;
+    border: 1px solid #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 1;
+}
