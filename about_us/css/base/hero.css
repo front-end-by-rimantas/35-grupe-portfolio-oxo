@@ -4,16 +4,15 @@
         align-items: center;
         min-height: 80vh;
         color: #fff;
-       
+        position: relative;
+        overflow: hidden;
 }
 .row.yes{
     margin-top: 100px;
-    overflow-x: hidden;
 }
 
 .row > .giant-h1 > h1 {
     padding-right: 20%;
-
 }
 .oval {
     display: flex;
@@ -37,7 +36,7 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
-  
+ 
 }
 @keyframes lempa{
     0% {

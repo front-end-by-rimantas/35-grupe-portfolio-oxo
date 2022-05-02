@@ -16,10 +16,12 @@
     font-weight: 600;
 }
 .touch-h3{
+    position: relative;
     color: #fff;
     font-size: 45px;
     line-height: 55px;
     font-weight: 700;
+   z-index: 1;
 }
 .touch-img > img {
     height: 400px;
