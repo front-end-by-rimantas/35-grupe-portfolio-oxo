@@ -9,6 +9,7 @@
 .moving-blocks > .list-view > .list {
     position: relative;
     display: flex;
+    transform: translateX(0);
     width: calc(11 / 3 * 100%);
     transition: all 2s;
 }
@@ -34,27 +35,6 @@
     cursor: pointer;
     color: aqua;
 }
-.moving-blocks > .action > .dots {
-    display: flex;
-    gap: 12px;
-}
-.dots > .dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ccc;
-}
-.moving-blocks .dots > .dot.active {
-    background-color: aqua;
-    /*transform: scale(1.4);*/
-    box-shadow: 0 0 0 2px aqua;
-}
-.moving-blocks .dots > .dot:hover {
-    cursor: pointer;
-    background-color: aqua;
-    box-shadow: 0 0 0 2px aqua;
-}
-
 
 .block-container{
     padding-bottom: 0; 

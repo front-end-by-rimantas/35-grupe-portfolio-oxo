@@ -29,7 +29,7 @@ scrollFunc();
 const heroDOM = document.querySelector('.axis');
 
 addEventListener('scroll', function () {
-    const heroPosition = 80;
+    const heroPosition = 90;
     if (scrollY > heroPosition) {
         heroDOM.classList.add('active');
     } else {
@@ -96,6 +96,7 @@ new Carousel('#block-generator', BlockCard, blockData, {
         tablet: 2,
         desktop: 3,
     },
+    previousNext: true,
 });
 
 /* moving blocks: end */

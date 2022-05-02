@@ -11,6 +11,14 @@ class Carousel {
             tablet: 1,
             desktop: 1,
         }
+        this.previousNext = true;
+
+        this.currentlyVisibleIndex = 0;
+        this.originalListSize = this.data.list.length;
+        this.listSize = 0;
+        this.copyCount = 0;
+        this.animationInAction = false;
+        this.animationDurationInMiliseconds = 1000;
 
         this.init();
     }
@@ -29,6 +37,7 @@ class Carousel {
         this.updateDefaultSettings();
 
         this.render();
+        this.action();
     }
 
     isValidSelector() {
@@ -77,23 +86,27 @@ class Carousel {
                     this.size.desktop = this.settings.size.desktop;
                 }
         }
+        if (typeof this.settings.previousNext === 'boolean') {
+            this.previousNext = this.settings.previousNext;
+        }
     }
 
-    
     listHTML() {
         let HTML = '';
         let copyCount = 0;
 
         for (const key in this.size) {
-            if (copyCount < this.size[key]) {
-                copyCount = this.size[key];
+            if (this.copyCount < this.size[key]) {
+                this.copyCount = this.size[key];
             }
         }
+
+        this.originalListSize = this.data.list.length;
         
         const list = [
-            ...this.data.list.slice(-copyCount),
+            ...this.data.list.slice(-this.copyCount),
             ...this.data.list,
-            ...this.data.list.slice(0, copyCount),
+            ...this.data.list.slice(0, this.copyCount),
         ];
 
         for (const item of list) {
@@ -101,9 +114,11 @@ class Carousel {
             HTML += `<div class="block">${card.render()}</div>`;
         }
 
-        const width = list.length / this.size.desktop * 100;
-        const trans = 100 / list.length * this.size.desktop;
-        
+        this.listSize = list.length;
+        this.currentlyVisibleIndex = this.size.desktop;
+        const width = this.listSize / this.size.desktop * 100;
+        const trans = 100 / this.listSize * this.currentlyVisibleIndex;
+
         return `<div class="list-view">
                     <div class="list" 
                          style="transform: translateX(-${trans}%);
@@ -113,9 +128,88 @@ class Carousel {
                 </div>`;
     }
 
+    actionsHTML() {
+        if (!this.previousNext) {
+            return '';
+        }
+
+        let leftAngleHTML = '';
+        let rightAngleHTML = '';
+
+        if (this.previousNext) {
+            leftAngleHTML = '<i class="angle fa fa-angle-left"></i>';
+            rightAngleHTML = '<i class="angle fa fa-angle-right"></i>';
+        }
+
+        return `<div class="action">
+                    ${leftAngleHTML}
+                    ${rightAngleHTML}
+                </div>`;
+    }
+
     render() {
-        const HTML = this.listHTML();
+        const HTML = this.listHTML() + this.actionsHTML();
         this.movingBlocksDOM.innerHTML = HTML;
+    }
+
+    action() {
+        const listDOM = this.movingBlocksDOM.querySelector('.list');
+        const nextDOM = this.movingBlocksDOM.querySelector('.fa-angle-right');
+        const previousDOM = this.movingBlocksDOM.querySelector('.fa-angle-left');
+
+        nextDOM.addEventListener('click', () => {
+            if (!this.animationInAction) {
+                this.currentlyVisibleIndex++;
+                const trans = -100 / this.listSize * this.currentlyVisibleIndex;
+                listDOM.style.transform = `translateX(${trans}%)`;
+
+                // teleportas i prieki
+                if (this.currentlyVisibleIndex === this.originalListSize + this.copyCount) {
+                    setTimeout(() => {
+                        listDOM.style.transition = 'all 0s';
+                        this.currentlyVisibleIndex = this.copyCount;
+                        const trans = -100 / this.listSize * this.currentlyVisibleIndex;
+                        listDOM.style.transform = `translateX(${trans}%)`;
+                        setTimeout(() => {
+                            listDOM.style.transition = 'all 1s';
+                        }, 16)
+                    }, this.animationDurationInMiliseconds)
+                }
+
+                this.animationInAction = true;
+
+                setTimeout(() => {
+                    this.animationInAction = false;
+                }, this.animationDurationInMiliseconds)
+            }
+        });
+
+        previousDOM.addEventListener('click', () => {
+            if (!this.animationInAction) {
+                this.currentlyVisibleIndex--;
+                const trans = -100 / this.listSize * this.currentlyVisibleIndex;
+                listDOM.style.transform = `translateX(${trans}%)`;
+
+                // teleportas i gala
+                if (this.currentlyVisibleIndex === 0) {
+                    setTimeout(() => {
+                        listDOM.style.transition = 'all 0s';
+                        this.currentlyVisibleIndex = this.listSize - 2 * this.copyCount;
+                        const trans = -100 / this.listSize * this.currentlyVisibleIndex;
+                        listDOM.style.transform = `translateX(${trans}%)`;
+                        setTimeout(() => {
+                            listDOM.style.transition = 'all 1s';
+                        }, 16)
+                    }, this.animationDurationInMiliseconds)
+                }
+
+                this.animationInAction = true;
+
+                setTimeout(() => {
+                    this.animationInAction = false;
+                }, this.animationDurationInMiliseconds)
+            }
+        });
     }
 }
 
