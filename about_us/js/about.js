@@ -26,3 +26,21 @@ for (let i = 0; i < accordions.length; i++) {
 }
 
 /* header: end */
+/* up-to-top: start */
+function manoFun() {
+    const pagePosision = 900;
+    if (scrollY > pagePosision) {
+         arrowDOM.classList.add('upVisible');
+    }else {
+       arrowDOM.classList.remove('upVisible');
+    }
+}
+const arrowDOM = document.querySelector('.upTop');
+
+const virsus = document.querySelector('#scrollUp');
+virsus.addEventListener('click', function () {
+    window.scrollTo(0, 0);
+})
+addEventListener('scroll', manoFun);
+manoFun();
+/* up-to-top: end */
