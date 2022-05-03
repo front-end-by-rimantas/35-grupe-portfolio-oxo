@@ -1,3 +1,4 @@
+/*
 function renderBlocks(selector, data){
     // susirasome privalomus ir neprivalumus raktus objekte
     const privalomi = ['className', 'decript', 'ceoName', 'title']
@@ -86,3 +87,38 @@ function renderBlocks(selector, data){
 
 }
 export { renderBlocks };
+*/
+
+class BlockCard {
+    constructor(data) {
+        this.data = data;
+    }
+
+    isValidData() {
+        if (typeof this.data !== 'object'
+            || this.data === null
+            || Array.isArray(this.data)
+            || typeof this.data.icon !== 'string'
+            || this.data.icon === ''
+            || typeof this.data.decript !== 'string'
+            || this.data.decript === ''
+            || typeof this.data.ceoName !== 'string'
+            || this.data.ceoName === ''
+            || typeof this.data.title !== 'string'
+            || this.data.title === '') {
+                return false;
+            }
+        return true;
+    }
+
+    render() {
+        return `<div class="blockCard block-box">
+                    <i class="fa fa-${this.data.icon} block-quote" aria-hidden="true"></i>
+                    <p class="block-description">${this.data.decript}</p>
+                    <h4 class="block-h4-title sm">${this.data.ceoName}</h4>
+                    <p class="block-CEO">${this.data.title}</p>
+                </div>`
+    }
+}
+
+export { BlockCard }

@@ -1,31 +1,70 @@
+.moving-blocks {
+    display: grid;
+    gap: 30px;
+}
+.moving-blocks > .list-view {
+    width: 100%;
+    overflow: hidden;    
+}
+.moving-blocks > .list-view > .list {
+    position: relative;
+    display: flex;
+    transform: translateX(0);
+    width: calc(11 / 3 * 100%);
+    transition: all 2s;
+}
+.moving-blocks .list > .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+}
+.moving-blocks > .action {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.moving-blocks > .action > .angle {
+    font-size: 24px;
+    padding: 10px;
+}
+.moving-blocks > .action > .angle:hover {
+    cursor: pointer;
+    color: aqua;
+}
+
 .block-container{
     padding-bottom: 0; 
 }
-.block-box {
+.blockCard {
     border: 1px solid #ff7364;
     display: inline-block;
     padding: 40px 40px;
+    width: 100%;
 }
-.block-box > .block-quote {
+.blockCard > .block-quote {
     color: #ff7364;
     font-size: 55px;
     line-height: 55px;
 }
 
-.block-box > .block-description {
+.blockCard > .block-description {
     font-size: 22px;
     line-height: 32px;
     color: #000629;
     font-weight: 500;
     margin: 20px 0;
 }
-.block-box > .block-h4-title {
+.blockCard > .block-h4-title {
     width: 40%;
     float: left;
     line-height: 20px;
 }
 
-.block-box > .block-CEO {
+.blockCard > .block-CEO {
     float: right;
     font-size: 14px;
     line-height: 18px;
