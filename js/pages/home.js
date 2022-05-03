@@ -1,6 +1,8 @@
 // component imports
 import { blockData } from '../data/blocks-section-data.js';
-import {renderBlocks} from '../components/moving-blocks.js';
+/*import {renderBlocks} from '../components/moving-blocks.js';*/
+import { Carousel } from '../components/moving-blocks/carousel.js';
+import { BlockCard } from '../components/moving-blocks/moving-blocks.js';
 // components execution
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
@@ -53,13 +55,13 @@ for (let i = 0; i < accordions.length; i++) {
 const heroDOM = document.querySelector('.axis');
 
 addEventListener('scroll', function () {
-    const heroPosition = 80;
+    const heroPosition = 90;
     if (scrollY > heroPosition) {
         heroDOM.classList.add('active');
     } else {
         heroDOM.classList.remove('active');
     }
-})
+});
 /* hero: end */
 
 /* what we do: start */
@@ -114,13 +116,23 @@ addEventListener('scroll', function () {
 // const [blockError, blockContent] = renderBlocks('#block-generator', [{ceoName: 'a', decript: 'b', title: '2'}]);
 
 
-const [blockError, blockContent] = renderBlocks('#block-generator', blockData);
+/*const [blockError, blockContent] = renderBlocks('#block-generator', blockData);
 
 
 // Padarom, kad respons spausdintu, tik kai yra klaida, jeigu true yra klaida!
 if (blockError) {
     console.error(blockContent);
 }
+
+*/
+new Carousel('#block-generator', BlockCard, blockData, {
+    size: {
+        mobile: 1,
+        tablet: 2,
+        desktop: 3,
+    },
+    previousNext: true,
+});
 
 /* moving blocks: end */
 
@@ -148,13 +160,20 @@ item.addEventListener('click', () => {
 /* footer: start */
 /* footer: end */
 /* up-to-top: start */
-const arrowDOM = document.querySelector('.upTop');
-addEventListener('scroll', function () {
+ function manoFun() {
     const pagePosision = 900;
     if (scrollY > pagePosision) {
          arrowDOM.classList.add('upVisible');
     }else {
        arrowDOM.classList.remove('upVisible');
     }
+}
+const arrowDOM = document.querySelector('.upTop');
+
+const virsus = document.querySelector('#scrollUp');
+virsus.addEventListener('click', function () {
+    window.scrollTo(0, 0);
 })
+addEventListener('scroll', manoFun);
+manoFun();
 /* up-to-top: end */
