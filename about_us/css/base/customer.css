@@ -1,0 +1,30 @@
+.container.customer {
+    padding-top: 0;
+}
+.customer-h2 {
+    color: #16215c;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    text-align: center;
+}
+.row.customer-row {
+    display:flex;
+    align-items: center;
+}
+
+.customer-row .block-box {
+    background-color: #f4f7fe;
+    border-radius: 2%;
+    border: none;
+}
+@media (max-width: 770px){
+    .row.customer-row{
+        display: inline-block;
+    }
+    .customer-img > img {
+        width: 100%;
+        object-fit: contain;
+        object-position: center;  
+    }
+}

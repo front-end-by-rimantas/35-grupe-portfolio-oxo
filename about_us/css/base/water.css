@@ -1,0 +1,62 @@
+.container.water{
+    padding-top: 0;
+}
+.container.water > .water-row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+.water-div-1,
+.water-div-2,
+.water-div-3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+.water-div-1 {
+    background-image: url(../../../about_us/images/water/01.jpg);
+}
+.water-div-1:hover{
+}
+.water-div-2 {
+    background-image: url(../../../about_us/images/water/02.jpg);
+}
+.water-div-3 {
+    background-image: url(../../../about_us/images/water/03.jpg);
+}
+.water-text{
+    display: none;
+}
+.water-div-1:hover > .water-text{
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+.water-div-2:hover .water-text{
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+.water-div-3:hover  .water-text{
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+.water-h2 {
+    color: #fff;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 700;
+}
+.water-p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+}
